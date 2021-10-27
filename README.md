@@ -97,7 +97,7 @@ scp -P 5222 -i mykey akkolchina@92.242.58.92:~/hw1/reads/multiqc_trimmed/multiqc
 ```
 $ platanus assemble -o Poil -t 1 -m 16 -f pe1.fastq.trimmed pe2.fastq.trimmed 2>assemble.log
 ```
-Далее проведем анализ полученных контигов:
+Далее проведем анализ полученных контигов: https://colab.research.google.com/drive/1W02uR5l-XWLG2P4CX4HQup_bM7-NXqHs?usp=sharing
 
 С помощью программы ```platanus scaffold``` соберем скаффолды из контигов и подрезанных чтений:
 ```
@@ -111,3 +111,5 @@ $ platanus gap_close -o Poil -t 1 -c Poil_scaffold.fa -IP1 pe1.fastq.trimmed pe2
 ```
 rm pe* mp*
 ```
+### 2. Анализ данных ###
+Ссылка на Google Colab: https://colab.research.google.com/drive/1W02uR5l-XWLG2P4CX4HQup_bM7-NXqHs?usp=sharing
